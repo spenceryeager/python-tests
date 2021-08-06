@@ -1,10 +1,14 @@
 #!/usr/bin/env python3.9
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import tkinter.messagebox as mb 
+import numpy as np
 
-
-print("This is a test of switching to VSCodium")
-print("I will")
 # this is a comment
 
+mb.showinfo(title="Attention", message="This is a github test. I like VSCodium so far!")
 
+x = np.linspace(1, 10, 100)
+y = np.sqrt(x)
+
+plt.plot(x, y)
+plt.show()
